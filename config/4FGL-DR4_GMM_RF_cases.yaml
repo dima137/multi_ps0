@@ -1,0 +1,291 @@
+4FGL-DR4_GMM_RF:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+#  prune: 100
+
+4FGL-DR4_GMM_RF_no_coord:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+#  prune: 100
+  features: 'no_coord_features'
+
+4FGL-DR4_GMM_RF_no_bcu_spp:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+  assoc_sources: 'no_bcu_spp'
+
+4FGL-DR4_GMM_RF_no_bcu:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+  assoc_sources: 'no_bcu'
+
+
+4FGL-DR4_GMM_RF_no_coord_no_bcu_spp:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+  features: 'no_coord_features'
+  assoc_sources: 'no_bcu_spp'
+
+
+4FGL-DR4_GMM_RF_no_coord_no_bcu_spp_w:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+  features: 'no_coord_features'
+  assoc_sources: 'no_bcu_spp'
+  train_weighting: weighted
+  test_weighting: weighted
+
+4FGL-DR4_GMM_RF_no_coord_w:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+  features: 'no_coord_features'
+  train_weighting: weighted
+  test_weighting: weighted
+
+4FGL-DR4_GMM_RF_no_bcu_spp_w:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+  assoc_sources: 'no_bcu_spp'
+  train_weighting: weighted
+  test_weighting: weighted
+
+
+4FGL-DR4_GMM_RF_no_coord_no_bcu:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+  features: 'no_coord_features'
+  assoc_sources: 'no_bcu'
+
+4FGL-DR4_GMM_PDF_pshift_nGauss1_npar4:
+  sep_model: GMM
+  class_alg: PDF
+  max_depth: 5
+  nmin: 100
+  features: 'all_features'
+  assoc_sources: 'all_assoc'
+  nGauss: 1
+  pshift_func: 'sigmoid' #'sigmoid', 'exp_log_poly'
+  npar: 4
+  prior_shift: 1
+  fit_features: 'spec_beta_Epeak'
+
+4FGL-DR4_GMM_PDF_no_coord_pshift_nGauss1_npar4:
+  sep_model: GMM
+  class_alg: PDF
+  max_depth: 5
+  nmin: 100
+  features: 'no_coord_features'
+  assoc_sources: 'all_assoc'
+  nGauss: 1
+  pshift_func: 'sigmoid' #'sigmoid', 'exp_log_poly'
+  npar: 4
+  prior_shift: 1
+  fit_features: 'spec_beta_Epeak'
+
+4FGL-DR4_GMM_PDF_no_bcu_pshift_nGauss1_npar4:
+  sep_model: GMM
+  class_alg: PDF
+  max_depth: 5
+  nmin: 100
+  features: 'all_features'
+  assoc_sources: 'no_bcu'
+  nGauss: 1
+  pshift_func: 'sigmoid' #'sigmoid', 'exp_log_poly'
+  npar: 4
+  prior_shift: 1
+  fit_features: 'spec_beta_Epeak'
+
+4FGL-DR4_GMM_PDF_no_coord_no_bcu_pshift_nGauss1_npar4:
+  sep_model: GMM
+  class_alg: PDF
+  max_depth: 5
+  nmin: 100
+  features: 'no_coord_features'
+  assoc_sources: 'no_bcu'
+  nGauss: 1
+  pshift_func: 'sigmoid' #'sigmoid', 'exp_log_poly'
+  npar: 4
+  prior_shift: 1
+  fit_features: 'spec_beta_Epeak'
+
+4FGL-DR4_GMM_PDF_no_bcu_spp_pshift_nGauss1_npar4:
+  sep_model: GMM
+  class_alg: PDF
+  max_depth: 5
+  nmin: 100
+  features: 'all_features'
+  assoc_sources: 'no_bcu_spp'
+  nGauss: 1
+  pshift_func: 'sigmoid' #'sigmoid', 'exp_log_poly'
+  npar: 4
+  prior_shift: 1
+  fit_features: 'spec_beta_Epeak'
+
+4FGL-DR4_GMM_PDF_no_coord_no_bcu_spp_pshift_nGauss1_npar4:
+  sep_model: GMM
+  class_alg: PDF
+  max_depth: 5
+  nmin: 100
+  features: 'no_coord_features'
+  assoc_sources: 'no_bcu_spp'
+  nGauss: 1
+  pshift_func: 'sigmoid' #'sigmoid', 'exp_log_poly'
+  npar: 4
+  prior_shift: 1
+  fit_features: 'spec_beta_Epeak'
+
+4FGL-DR4_GMM_PDF_no_coord_no_bcu_spp_pshift_nGauss1_npar1:
+  sep_model: GMM
+  class_alg: PDF
+  max_depth: 5
+  nmin: 100
+  features: 'no_coord_features'
+  assoc_sources: 'no_bcu_spp'
+  nGauss: 1
+  pshift_func: 'sigmoid' #'sigmoid', 'exp_log_poly'
+  npar: 1
+  prior_shift: 1
+  fit_features: 'spec_beta_Epeak'
+
+
+4FGL-DR4_GMM_PDF_no_coord_no_bcu_spp_pshift_nGauss0_npar4:
+  sep_model: GMM
+  class_alg: PDF
+  max_depth: 5
+  nmin: 100
+  features: 'no_coord_features'
+  assoc_sources: 'no_bcu_spp'
+  nGauss: 0
+  pshift_func: 'sigmoid' #'sigmoid', 'exp_log_poly'
+  npar: 4
+  prior_shift: 1
+  fit_features: 'spec_beta_Epeak'
+
+
+4FGL-DR4_GMM_RF_no_coord_no_bcu_spp_nmin50:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 50
+  features: 'no_coord_features'
+  assoc_sources: 'no_bcu_spp'
+
+
+4FGL-DR4_GMM_RF_no_coord_no_prune:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+  features: 'no_coord_features'
+
+
+4FGL-DR4_GMM_RF_no_prune:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 100
+  prune: None
+
+
+4FGL-DR4_GMM_NN:
+  sep_model: GMM
+  class_alg: NN
+  max_depth: 5
+  nmin: 50
+  prune: 100
+
+
+4FGL-DR4_GMM_RF_w:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 50
+  prune: 100
+  train_weighting: weighted
+  test_weighting: weighted
+
+
+4FGL-DR4_GMM_NN_w:
+  sep_model: GMM
+  class_alg: NN
+  max_depth: 5
+  nmin: 50
+  prune: 100
+  train_weighting: weighted
+  test_weighting: weighted
+
+
+4FGL-DR4_GMM_RF_wt:
+  sep_model: GMM
+  class_alg: RF
+  max_depth: 5
+  nmin: 50
+  prune: 100
+  test_weighting: weighted
+
+
+4FGL-DR4_GMM_NN_wt:
+  sep_model: GMM
+  class_alg: NN
+  max_depth: 5
+  nmin: 50
+  prune: 100
+  test_weighting: weighted
+
+
+# old cases
+
+4FGL-DR4_RF_RF:
+  sep_model: RF
+  class_alg: RF
+
+
+
+4FGL-DR4_RF_NN:
+  sep_model: RF
+  class_alg: NN
+
+
+4FGL-DR4_RF_RF_w:
+  sep_model: RF
+  class_alg: RF
+  train_weighting: weighted
+  test_weighting: weighted
+
+4FGL-DR4_RF_NN_w:
+  sep_model: RF
+  class_alg: NN
+  train_weighting: weighted
+  test_weighting: weighted
+  #epochs: 250
+
+
+
+4FGL-DR4_RF_RF_wt:
+  sep_model: RF
+  class_alg: RF
+  test_weighting: weighted
+
+4FGL-DR4_RF_NN_wt:
+  sep_model: RF
+  class_alg: NN
+  test_weighting: weighted
+

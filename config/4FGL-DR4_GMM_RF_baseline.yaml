@@ -1,0 +1,27 @@
+cat_name: 4FGL-DR4
+version: 34
+Eind: 1000 # MeV
+add_plec_pars: 0
+
+sep_model: GMM # 'GMM', 'RF'
+nmin: 100
+nmin_GMM: 10
+max_depth: 5
+
+assoc_sources: all_assoc # 'all_assoc', 'no_bcu_spp'
+unas_sources: 'unas_unk' # 'all_not_assoc'
+features: 'all_features' # 'all_features', 'no_coord_features'
+
+class_alg: RF # 'RF', 'NN', 'NN_SK'
+#train_weighting: weighted
+#test_weighting: weighted
+max_sample: 10
+nGMM_w: 12
+test_frac: 0.3
+nav: 10
+
+epochs: 1000
+
+root_folder: '../'
+folder_out: 'data_out/'
+folder_in: 'data_in/'
