@@ -3,6 +3,7 @@ import copy
 
 from scipy.stats import binom
 import pandas as pd
+import os
 
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
@@ -734,8 +735,11 @@ def get_weights_fn(cdict):
     assoc_sources = cdict.get('assoc_sources', 'all_assoc')
     feature_mode = cdict.get('features', 'all_features')
     nGMM = cdict.get('nGMM_w', 10)
-    weights_fn = '%s/weights/weights_%s_%s_%s_%ikernels.csv' % \
-    (folder_out, cat_name, assoc_sources, feature_mode, nGMM)
+    weights_folder = '%s/weights/' % folder_out
+    if not os.path.exists(weights_folder):
+        os.makedirs(weights_folder)
+    weights_fn = '%s/weights_%s_%s_%s_%ikernels.csv' % \
+    (weights_folder, cat_name, assoc_sources, feature_mode, nGMM)
     return weights_fn
 
 
